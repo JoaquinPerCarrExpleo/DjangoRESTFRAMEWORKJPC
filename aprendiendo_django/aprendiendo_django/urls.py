@@ -16,7 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from aprendiendo_django.miApp.api.views import ProjectListAPI
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('', ProyectListApi.as_view()),
+    path('', ProjectListAPI.as_view()),
 ]
